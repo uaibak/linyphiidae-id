@@ -187,8 +187,10 @@ python -m pip check
 python -m unittest discover -s tests -v
 ```
 
-GitHub Actions runs dependency, syntax, and non-GUI workflow checks on Python
-3.11. GUI rendering requires a separate desktop check. See
+GitHub Actions runs editable installation, dependency, syntax, and workflow
+checks on Python 3.11 across Ubuntu, Windows, and macOS. An opt-in GUI smoke
+test checks application startup and tab mapping, using Xvfb on Linux. It does
+not replace manual visual and interaction checks. See
 [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidance.
 
 ## Repository Contents

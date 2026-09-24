@@ -39,8 +39,11 @@ cancellation, and loading a completed model without freezing the window.
 
 Include regression tests for changed behavior. Document changes to inventory
 columns, preprocessing, genus ordering, model manifests, or exported results.
-GitHub Actions checks dependencies, syntax, and non-GUI tests; it does not
-verify desktop rendering or biological accuracy.
+GitHub Actions checks editable installation, dependencies, syntax, and tests
+on Ubuntu, Windows, and macOS. GUI smoke tests check window creation and tab
+mapping, not visual correctness or biological accuracy. To run them locally,
+set `LINYPHIIDAE_GUI_TESTS=1` and run the test suite with a display available;
+Linux CI uses Xvfb. Without that variable, GUI tests are skipped.
 
 ## Dataset and Model Contributions
 
