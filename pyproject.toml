@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "linyphiidae-id"
+version = "0.1.0"
+description = "Desktop tools for Linyphiidae specimen datasets and custom genus classifiers"
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+license = {file = "LICENSE"}
+dynamic = ["dependencies"]
+
+[project.gui-scripts]
+linyphiidae-id = "linyphiidae_id.app:main"
+
+[tool.setuptools]
+packages = ["linyphiidae_id"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}

@@ -1,0 +1,32 @@
+# Local environments and configuration
+.venv/
+.venv-*/
+.env
+.env.*
+
+# Python caches and build output
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+build/
+dist/
+*.egg-info/
+
+# Private datasets and trained models
+datasets/**
+!datasets/linyphiidae/
+!datasets/linyphiidae/README.md
+models/**
+!models/linyphiidae/
+!models/linyphiidae/manifest.example.json
+*.pt
+*.pth
+*.ts
+*.onnx
+
+# Editor and OS files
+.DS_Store
+.idea/
+*.log
+.vscode/
